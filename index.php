@@ -1,6 +1,6 @@
 <?php
-include "conexao.php";
-include "header.php";
+include "includes/conexao.php";
+include "includes/header.php";
 
 ?>
 <div class="container">
@@ -28,7 +28,12 @@ include "header.php";
             } ?>
         </tbody>
     </table>
+    <div class="d-flex justify-content-center">
+        <a href="formulario_cadastro.php" class="btn btn-outline-success mx-2">Adicionar novo Produto</a>
+        <a class="btn btn-outline-secondary mx-2">Editar Produto</a>
+        <a href="remover.php" class="btn btn-outline-danger mx-2">Remover Produto</a>
+    </div>
 </div>
 <?php
 
-include "footer.php";
+include "includes/footer.php";
