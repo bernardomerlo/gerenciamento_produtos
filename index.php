@@ -26,7 +26,7 @@ include "includes/header.php";
                 echo '<td>' . $row->quantidade . '</td>';
                 echo '<td>R$' . $row->preco . '</td>';
                 echo '<td>' . $row->codigo_produto . '</td>';
-                echo '<td><a href="formulario_edicao.php?id=' . $row->id . '" class="btn btn-outline-warning mx-2">Editar</a></td>';
+                echo '<td><a href="formulario_edicao.php?id=' . $row->id . '" class="btn btn-outline-secondary mx-2">Editar</a></td>';
                 echo '<td><a href="formulario_remocao.php?id=' . $row->id . '" class="btn btn-outline-danger mx-2">Remover</a></td>';
                 echo '</tr>';
             } ?>
