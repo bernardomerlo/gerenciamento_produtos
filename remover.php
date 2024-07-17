@@ -9,5 +9,4 @@ include "includes/header.php";
     </div>
 </div>
 <?php
-echo "Produto removido com sucesso!";
 include "includes/footer.php";
