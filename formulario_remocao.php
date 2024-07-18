@@ -11,7 +11,7 @@ $id = $_GET["id"];
     </div>
     <div class="d-flex justify-content-center">
         <a href="remove.php?id=<?php echo $id ?>" class="btn btn-outline-danger mx-2">Remover</a>
-        <a href="index.php" class="btn btn-outline-secondary mx-2">Cancelar</a>
+        <a href="painel_produtos.php" class="btn btn-outline-secondary mx-2">Cancelar</a>
     </div>
 </div>
 <?php

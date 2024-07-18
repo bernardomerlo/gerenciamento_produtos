@@ -20,5 +20,5 @@ $sts->bindParam(5, $id);
 $result = $sts->execute();
 
 if ($result) {
-    header('Location: index.php');
+    header('Location: painel_produtos.php');
 }

@@ -25,7 +25,7 @@ $id = $_GET["id"];
         </div>
         <div class="d-flex justify-content-center py-3">
             <button type="submit" class="btn btn-outline-success">Editar</button>
-            <a href="index.php" class="btn btn-outline-danger mx-2">Cancelar</a>
+            <a href="painel_produtos.php" class="btn btn-outline-danger mx-2">Cancelar</a>
         </div>
     </form>
 </div>

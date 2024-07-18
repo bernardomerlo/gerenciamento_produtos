@@ -9,5 +9,5 @@ $sts = $db->prepare($query);
 $sts->bindParam(1, $id);
 $result = $sts->execute();
 if ($result) {
-    header('Location: index.php');
+    header('Location: painel_produtos.php');
 }
