@@ -1,3 +1,5 @@
+    <br>
+    <br>
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-top py-3 my-3">
             <li class="nav-item"><a class="nav-link px-2 text-muted" href="https://github.com/bernardomerlo">GitHub</a></li>
