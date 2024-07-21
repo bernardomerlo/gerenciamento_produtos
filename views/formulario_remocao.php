@@ -1,6 +1,6 @@
 <?php
-include "includes/conexao.php";
-include "includes/header.php";
+include "../includes/conexao.php";
+include "../includes/header.php";
 
 $id = $_GET["id"];
 
@@ -16,9 +16,9 @@ $produto = $sts->fetch(PDO::FETCH_OBJ);
         <h2 class="center">Tem certeza que deseja remover o produto <?php echo $produto->nome ?>?</h2>
     </div>
     <div class="d-flex justify-content-center">
-        <a href="remove.php?id=<?php echo $id ?>" class="btn btn-outline-danger mx-2">Remover</a>
-        <a href="index.php" class="btn btn-outline-secondary mx-2">Cancelar</a>
+        <a href="lista_compras/controllers/remove.php?id=<?php echo $id ?>" class="btn btn-outline-danger mx-2">Remover</a>
+        <a href="/lista_compras/views/painel_produtos.php" class="btn btn-outline-secondary mx-2">Cancelar</a>
     </div>
 </div>
 <?php
-include "includes/footer.php";
+include "../includes/footer.php";

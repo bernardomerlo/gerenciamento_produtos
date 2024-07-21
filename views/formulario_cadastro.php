@@ -1,10 +1,10 @@
 <?php
-include "includes/conexao.php";
-include "includes/header.php";
+include "../includes/conexao.php";
+include "../includes/header.php";
 
 ?>
 <div class="container">
-    <form action="cadastra.php" class="needs-validation" method="POST">
+    <form action="/lista_compras/controllers/cadastra.php" class="needs-validation" method="POST">
         <div class="form-group">
             <label for="Nome">Nome</label>
             <input type="text" class="form-control" name="nome" id="nome" aria-describedby="nome" placeholder="Nome do Produto." required>
@@ -23,9 +23,9 @@ include "includes/header.php";
         </div>
         <div class="d-flex justify-content-center py-3">
             <button type="submit" class="btn btn-outline-success">Adicionar</button>
-            <a href="painel_produtos.php" class="btn btn-outline-danger mx-2">Cancelar</a>
+            <a href="/lista_compras/views/painel_produtos.php" class="btn btn-outline-danger mx-2">Cancelar</a>
         </div>
     </form>
 </div>
 <?php
-include "includes/footer.php";
+include "../includes/footer.php";

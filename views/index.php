@@ -1,5 +1,5 @@
 <?php
-include "includes/conexao.php";
+include "../includes/conexao.php";
 
 if (isset($_POST['email']) || isset($_POST['senha'])) {
     if (strlen($_POST['email']) == 0) {
@@ -24,7 +24,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['id'] = $usuario->id;
             $_SESSION['nome'] = $usuario->nome;
 
-            header("Location: painel_produtos.php");
+            header("Location: /lista_compras/views/painel_produtos.php");
         } else {
             echo "<script type='text/javascript'>alert('Falha ao logar! E-mail ou senha incorretos');</script>";
         }
@@ -38,6 +38,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/360/360663.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
@@ -71,7 +72,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
                         <hr class="my-4">
 
-                        <a href="cadastro_usuario.php" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">Cadastre-se</a>
+                        <a href="/lista_compras/views/cadastro_usuario.php" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit">Cadastre-se</a>
 
                     </div>
                 </div>

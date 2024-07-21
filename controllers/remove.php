@@ -1,6 +1,6 @@
 <?php
 
-include "includes/conexao.php";
+include "../includes/conexao.php";
 
 $id = $_GET["id"];
 
@@ -9,5 +9,5 @@ $sts = $db->prepare($query);
 $sts->bindParam(1, $id);
 $result = $sts->execute();
 if ($result) {
-    header('Location: painel_produtos.php');
+    header('Location: /lista_compras/views/painel_produtos.php');
 }
